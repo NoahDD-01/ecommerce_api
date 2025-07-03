@@ -47,6 +47,13 @@ INSTALLED_APPS = [
     'ckeditor',
 ]
 
+AUTH_USER_MODEL= "accounts.User"
+
+AUTHENTICATION_BACKENDS=[
+    "accounts.backends.UsernameEmailPhoneBackend",
+    "django.contrib.auth.backends.ModelBackend",
+]
+
 CORS_ALLOWED_ORIGINS = [
 
     "http://localhost:3000",
@@ -154,7 +161,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Yangon'
 
 USE_I18N = True
 
