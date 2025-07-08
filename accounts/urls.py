@@ -14,4 +14,12 @@ urlpatterns = [
     path('users/<uuid:pk>/',user_detail,name='user-detail'),
     path('users/<uuid:pk>/update/',user_update,name='user-update'),
     path('users/<uuid:pk>/delete/',user_delete,name='user-delete'),
+
+    path("group/",group_list,name='group_list'),
+    path('group/create/',group_create,name='group_crate'),
+    path('group/<int:pk>/detail/',group_detail,name='group_detail'),
+    path('group/<int:pk>/update/',group_update,name='group_update'),
+    path('group/<int:pk>/delete',group_delete,name='group_delete'),
+
+    path('permission/',permission_list_view,name='permission'),
 ]
