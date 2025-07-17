@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'ckeditor',
 ]
 
-AUTH_USER_MODEL= "accounts.User"
+AUTH_USER_MODEL="accounts.User"
 
 AUTHENTICATION_BACKENDS=[
     "accounts.backends.UsernameEmailPhoneBackend",
